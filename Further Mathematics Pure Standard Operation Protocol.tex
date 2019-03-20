@@ -570,60 +570,10 @@ Check if that analytic formula tends to a specific limit.(a small trick
 would be to at least check \(lim_{n\rightarrow \infty} a^n\) has a limit
 otherwise the series diverge)
 
-\subsection{Proof by Induction}\label{header-n206}
-
-Proof by induction follow a standard procedure which you should clearly
-demonstrate your understanding of this format onto the paper:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  State the statement: \(H_k : P(k)\)
-\item
-  show that \(H_1\) is true
-\item
-  assume \(H_k\) is true for some number \(n\in \N\) or \(n \in \Z^+\)
-\item
-  show that \(P(n+1)\) is true by the assumption that \(H_n\) is ture
-\item
-  state that \(H_n \implies H_{n+1}\)
-\item
-  state that by the principal of mathematical induction(PMI), the
-  statement is true for all \(n\in \N\) or \(n \in \Z^+\)
-\end{enumerate}
-
-Notice most of the mathematical induction question would be related to
-number theory or calculus expression, which you should be able to solve
-with some algebra manipulation(such as taking \(n = a*k\) for those
-divisible question), but for some of those series question, you may need
-to think it carefully or seek help directly from the Maclaurin's
-expansion in MF10
-
-\subsection{Matrix and Determinant}\label{header-n222}
-
-\subsection{Vector Geometry}\label{header-n224}
-
-\subsection{Vector Space}\label{header-n226}
-
-Vector space is a relatively abstract topic in the further math so it is
-consider difficult first encounter. However, CIE also consider about
-this situation so the question usually set is easier to solve compare
-with the other exam board.
-
-\subsubsection{Axioms of Vector Space}\label{header-n228}
-
-\subsubsection{linear independent}\label{header-n229}
-
-\subsubsection{subspace}\label{header-n230}
-
-\subsubsection{Spanning a space}\label{header-n231}
-
-\subsubsection{Range space}\label{header-n232}
-
-\subsection{Polynomials}\label{header-n234}
+\subsection{Polynomials}\label{header-n206}
 
 \subsubsection{Relations Between Roots and
-Coefficient}\label{header-n235}
+Coefficient}\label{header-n207}
 
 For a general polynomial
 \(P(x) = ax^n + bx^{n-1} + cx^{n-2} + \dots + d\) , it will have root
@@ -670,7 +620,7 @@ caution to remember them clearly)
   \( S_{-1}=\sum \cfrac{1}{\alpha} = \cfrac{\sum \alpha \beta}{\sum \alpha \beta\gamma}\)
 \end{itemize}
 
-\subsubsection{Method of Substitution}\label{header-n257}
+\subsubsection{Method of Substitution}\label{header-n231}
 
 During the exam, there exists some question which ask you to find for
 example, equation suitable for
@@ -686,7 +636,7 @@ in this way you should move all the integer power to one side and
 fractional power to other side, having suitable power(for example power
 of 2 in this case) for both side and hence get the new equation.
 
-\subsubsection{Method of Recurrence}\label{header-n258}
+\subsubsection{Method of Recurrence}\label{header-n234}
 
 given a polynomial \(P(x) = ax^n + bx^{n-1} + cx^{n-2} + \dots + d\), we
 know by \textbf{factor theorem} that if
@@ -714,5 +664,151 @@ power of S, for example the same equation implies also
 \(aS_{n-1} + bS_{n-2} + cS_{n-3} + \dots + n*dS_{-1} = 0\) since you
 would find that dividing a x from the original equation means the
 formula will still hold.
+
+\subsection{Proof by Induction}\label{header-n248}
+
+Proof by induction follow a standard procedure which you should clearly
+demonstrate your understanding of this format onto the paper:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  State the statement: \(H_k : P(k)\)
+\item
+  show that \(H_1\) is true
+\item
+  assume \(H_k\) is true for some number \(n\in \N\) or \(n \in \Z^+\)
+\item
+  show that \(P(n+1)\) is true by the assumption that \(H_n\) is ture
+\item
+  state that \(H_n \implies H_{n+1}\)
+\item
+  state that by the principal of mathematical induction(PMI), the
+  statement is true for all \(n\in \N\) or \(n \in \Z^+\)
+\end{enumerate}
+
+Notice most of the mathematical induction question would be related to
+number theory or calculus expression, which you should be able to solve
+with some algebra manipulation(such as taking \(n = a*k\) for those
+divisible question), but for some of those series question, you may need
+to think it carefully or seek help directly from the Maclaurin's
+expansion in MF10
+
+\subsection{Vector Geometry}\label{header-n264}
+
+\subsubsection{Vector Product}\label{header-n265}
+
+\(|a\times b| = |a||b|\hat{n}\sin\theta \)
+
+\(a \times b = \begin{vmatrix} i&&j&&k\\a_1&&a_2&&a_3\\b_1&&b_2&&b_3\end{vmatrix}\)
+
+notice that the usual way of having cross product from the vector
+derives from this notation, and it is recommended that candidate use
+this expression instead for easier memorization
+
+hence, the area of the triangle form from these two vectors is
+\(\cfrac{1}{2} |a\times b|\)
+
+\subsubsection{Vector Equation of Line}\label{header-n270}
+
+Vector equation of line can be expressed as
+\(\underline{r} = \underline{a}+\lambda \underline{b}\), representing a
+line pointing from a given point \(\underline{a}\) to all direction on
+\(\underline{b}\)
+
+\paragraph{Finding shortest line from a point to a
+line}\label{header-n272}
+
+The shortest distance is always perpendicular towards the line from the
+point, hence for a point P to a line r, we would derive it from
+\(PQ\bullet \underline{r} = 0\), where Q is the point on the line
+forming from the line expression
+
+\paragraph{Finding shortest distance from two skew
+lines}\label{header-n274}
+
+The shortest distance between
+\(\underline{r_1} = \underline{a_1}+\lambda_1 \underline{b_1}\) and
+\(\underline{r_2} = \underline{a_2}+\lambda_2 \underline{b_2}\) is given
+by the formula
+\(|\cfrac{(a_2-a_1)\bullet(b_1\times b_2)}{|b_1 \times b_2|}|\)
+
+\subsubsection{Planes}\label{header-n276}
+
+three forms of planes equations:
+
+\begin{itemize}
+\item
+  the scalar product equation \(\underline{r}\bullet\underline{n} = p\) 
+\item
+  the cartesian equation \(ax + by+ cz = d\)
+\item
+  the vector equation
+  \(\underline{r} = \underline{a} + s\underline{b} + t\underline{c}\)
+\end{itemize}
+
+\paragraph{Finding the angle between two plane}\label{header-n285}
+
+for \(\underline{r_1}\bullet\underline{n_1} = d_1\) and
+\(\underline{r_2}\bullet\underline{n_2} = d_2\), the angle between the
+two plane can be simply given as
+\(\cos{\alpha} = \cfrac{\underline{n_1}\bullet\underline{n_2}}{|\underline{n_1}||\underline{n_2}|}\)
+
+notice there exists two angle: \(\alpha\) and \(180^{\circ} - \alpha\),
+you should read through the question carefully and decide whether this
+is acute angle or not.(NB usually it will be acute angle)
+
+\paragraph{Finding the line of intersection between two
+plane}\label{header-n299}
+
+for \(\underline{r_1}\bullet\underline{n_1} = d_1\) and
+\(\underline{r_2}\bullet\underline{n_2} = d_2\), the line of
+intersection is obtained by first find \(\underline{n_c}\) and obtain a
+point of the new line by having two cartesian equation
+\(ax_1 + by_1+ cz_1 = d_1\) and \(ax_2 + by_2+ cz_2 = d_2\) and setting
+one variable as free variable to solve the set of equation, for example
+\(x = 1\)
+
+if the equation can't be solved, change a free variable
+
+\paragraph{Angle between a line and a plane}\label{header-n311}
+
+for a line \(\underline{r} = \underline{a} + \lambda\underline{b}\) and
+a plane \(\underline{r}\bullet\underline{n} = p\) the angle between the
+line and the plane can be calculated via:
+
+\(\cos{\alpha} = \cfrac{n\bullet b}{|n||b|}\) and then obtain the angle
+via \(90^{\circ} - \alpha\) or \(\alpha - 90^{\circ} \) depend on the
+size of the angle(because n is perpendicular to the plane)
+
+\paragraph{Shortest distance between a point and a
+plane}\label{header-n307}
+
+for a point P and a plane \(\underline{r}\bullet\underline{n} = p\) the
+distance should be \(|\cfrac{\overrightarrow{\rm PQ}\bullet n}{|n|}|\),
+where Q is any point on the plane(usually obtained through solving the
+cartesian equation for the plane by setting two variable to 0 and hence
+gives x)
+
+\subsection{Matrix and Determinant}\label{header-n287}
+
+\subsection{Vector Space}\label{header-n289}
+
+Vector space is a relatively abstract topic in the further math so it is
+consider difficult first encounter. However, CIE also consider about
+this situation so the question usually set is easier to solve compare
+with the other exam board.
+
+\subsubsection{Axioms of Vector Space}\label{header-n291}
+
+\subsubsection{linear independent}\label{header-n292}
+
+\subsubsection{subspace}\label{header-n293}
+
+\subsubsection{Spanning a space}\label{header-n294}
+
+\subsubsection{Range space}\label{header-n295}
+
+\(\Epsilon \Delta\Xi\)
 
 \end{document}
