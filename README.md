@@ -8,6 +8,5 @@ Topics TODO:
 * Vector Space
 * Matrix and Determinet
 
-~~* Polynomial~~
-
-~~* Vector Geometry~~
+## Copyright Disclaimer
+Every Reasonable Effort had been made to trace the reference material owner, but in any concern the repo hold no responsibility for it and wish the copyright holder to directly contact the repo for those materials
