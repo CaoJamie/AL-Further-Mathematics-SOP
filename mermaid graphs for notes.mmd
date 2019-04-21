@@ -1,0 +1,25 @@
+Approximation for distributions
+
+```mermaid
+graph LR
+A[Binomial Distribution]==>|n>50, np <5|B[Poisson Distribution]
+A==>|np > 5, nq > 5, cc|C[Normal Distribution]
+B==>|λ>15,cc|C
+```
+
+Decision Process for choosing the test
+
+```mermaid
+graph TD
+A[Sample Size] -->|n>30,normally distributed/n<30,variance known| B[Z test]
+A-->|n<30, normally distributed,variance unknown|C[t test]
+B-->|one sample|D[One sample Z test]
+B-->|two sample|E[two sample test]
+E-->|paired,normally distributed|F[paired Z test]
+E-->|not paired|G[two sample Z test]
+C-->|one sample|H[One sample t test]
+C-->|two sample|I[two sample test]
+I-->|paired|J[paired t test]
+I-->|not paired|K[two sample t test]
+```
+
