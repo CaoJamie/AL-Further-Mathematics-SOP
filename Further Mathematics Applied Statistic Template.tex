@@ -170,7 +170,7 @@ given interval
 
 this is used to find
 
-\paragraph{Condition for Poisson distribution}\label{header-n45}
+\paragraph{Condition for Poisson distribution}\label{header-n46}
 
 \begin{itemize}
 \item
@@ -183,7 +183,7 @@ this is used to find
   event occur at a constant rate
 \end{itemize}
 
-\paragraph{Probability}\label{header-n55}
+\paragraph{Probability}\label{header-n56}
 
 \begin{itemize}
 \item
@@ -194,7 +194,7 @@ this is used to find
   \(P(X>n) = 1-P(x\le n) = 1-\sum^n_{x=0}\cfrac{e^{-\lambda} \lambda^n}{n!} \)
 \end{itemize}
 
-\paragraph{Means and Variance}\label{header-n63}
+\paragraph{Means and Variance}\label{header-n64}
 
 \begin{itemize}
 \item
@@ -204,15 +204,15 @@ this is used to find
 \end{itemize}
 
 \paragraph{Approximate Poisson distribution with other
-distribution}\label{header-n69}
+distribution}\label{header-n70}
 
 \begin{figure}
 \centering
-\includegraphics[width=8.30208in]{1555840987390.png}
+\includegraphics[width=4.95833in]{1558161169977.png}
 \caption{}\label{mermaid}
 \end{figure}
 
-\subparagraph{Continuity Correction}\label{header-n71}
+\subparagraph{Continuity Correction}\label{header-n72}
 
 when changing variable from discreate to continuous, continuity
 correction is required to ensure the range cover all interval:
@@ -230,7 +230,7 @@ Discreate & Continuous\tabularnewline
 \bottomrule
 \end{longtable}
 
-\subparagraph{Binomial to Poisson}\label{header-n72}
+\subparagraph{Binomial to Poisson}\label{header-n93}
 
 if \(n>50\), \(np<5\) we could approximate binomial distribution using
 Poisson distribution
@@ -240,7 +240,7 @@ approximation
 
 Specifically, we can have \(X \sim B(n,p) \rightarrow Y \sim Po(np)\)
 
-\subparagraph{Poisson to Normal}\label{header-n73}
+\subparagraph{Poisson to Normal}\label{header-n97}
 
 if \(\lambda > 15\), we could approximate Poisson distribution using
 Normal distribution
@@ -253,7 +253,7 @@ Specifically, we can have
 
 When obtaining the probability, you should use the continuity correction
 
-\subparagraph{Binomial to Normal}\label{header-n74}
+\subparagraph{Binomial to Normal}\label{header-n102}
 
 If \(np>5\) and \(nq > 5\) we could approximate binomial distribution
 using Normal distribution
@@ -266,7 +266,7 @@ Specifically, we can have
 
 When obtaining the probability, you should use the continuity correction
 
-\subsubsection{Geometric distribution}\label{header-n75}
+\subsubsection{Geometric distribution}\label{header-n107}
 
 \(X \sim Geo(p)\) where \(p\) is the probability of success for one
 trail
@@ -274,7 +274,7 @@ trail
 this is used to find the number of attempt that leads to the first
 success
 
-\paragraph{Condition}\label{header-n77}
+\paragraph{Condition}\label{header-n110}
 
 \begin{itemize}
 \item
@@ -285,7 +285,7 @@ success
   Each event is independent
 \end{itemize}
 
-\paragraph{Probability}\label{header-n79}
+\paragraph{Probability}\label{header-n118}
 
 \begin{itemize}
 \item
@@ -296,7 +296,7 @@ success
   \(\begin{cases}P(X < x) = 1-(1-p)^{x-1} \\ P(X \ge x) = (1-p)^{x-1}\end{cases}\)
 \end{itemize}
 
-\paragraph{Means and Variance}\label{header-n85}
+\paragraph{Means and Variance}\label{header-n126}
 
 \begin{itemize}
 \item
@@ -305,13 +305,13 @@ success
   \(Var(x) = \cfrac{q}{p^2}\)
 \end{itemize}
 
-\subsubsection{Negative exponential distribution}\label{header-n97}
+\subsubsection{Negative exponential distribution}\label{header-n132}
 
 \(X\sim Exp(\lambda)\) where \(\lambda\) is the average
 
 this is used to model the duration of the event
 
-\paragraph{Probability}\label{header-n101}
+\paragraph{Probability}\label{header-n135}
 
 \begin{itemize}
 \item
@@ -322,7 +322,7 @@ this is used to model the duration of the event
   \(P(X > x) = e^{-\lambda x}\)
 \end{itemize}
 
-\paragraph{Means and Variance}\label{header-n103}
+\paragraph{Means and Variance}\label{header-n143}
 
 \begin{itemize}
 \item
@@ -331,7 +331,7 @@ this is used to model the duration of the event
   \(Var(x) =  \cfrac{1}{\lambda^2}\)
 \end{itemize}
 
-\paragraph{Memoryless}\label{header-n404}
+\paragraph{Memoryless}\label{header-n149}
 
 This probability distribution have a very special property, which is
 \textbf{memoryless}
@@ -343,7 +343,7 @@ irrelevant to the previous event:
 
 Please be aware of this property in the context of the question
 
-\paragraph{PDF and CDF}\label{header-n421}
+\paragraph{PDF and CDF}\label{header-n154}
 
 \begin{itemize}
 \item
@@ -356,13 +356,13 @@ Please be aware of this property in the context of the question
 \end{itemize}
 
 \subsection{Inference with Normal and t
-distributions}\label{header-n115}
+distributions}\label{header-n160}
 
 The decision Process on Choosing the type of Hypothesis test
 
 \begin{figure}
 \centering
-\includegraphics[width=8.30208in]{1555840987406.png}
+\includegraphics[width=4.95833in]{1558161170072.png}
 \caption{}\label{mermaid}
 \end{figure}
 
@@ -380,17 +380,17 @@ before conducting the test:
   (this is usually preferred in the FMA context for hypothesis test)
 \end{itemize}
 
-\subsubsection{One Sample Test}\label{header-n124}
+\subsubsection{One Sample Test}\label{header-n169}
 
-\paragraph{Define the variable{[}if needed{]}}\label{header-n125}
+\paragraph{Define the variable{[}if needed{]}}\label{header-n170}
 
-\paragraph{Hypothesis}\label{header-n126}
+\paragraph{Hypothesis}\label{header-n171}
 
 \(H_0\): \(\mu_x = a\)
 
 \(H_1\): \(\mu_x \ne a, \mu_x > a, \mu_x < a\)
 
-\paragraph{Test Statistics}\label{header-n129}
+\paragraph{Test Statistics}\label{header-n174}
 
 Note that you should state CLT is used if only \(n>30\) is given
 
@@ -404,12 +404,12 @@ if it is a two tailed test, then obtain \(z_{\alpha/2}\) or
 if \(|Z| < z\) or \(|T| < t\), \(H_0\) accepted, otherwise \(H_0\)
 rejected
 
-\paragraph{Conclusion}\label{header-n133}
+\paragraph{Conclusion}\label{header-n179}
 
 Given the current data, there \{is/is not\} evidence to say that at
 \(\alpha\)\% significant level, \{description of \(\mu_x\) hypothesis\}
 
-\paragraph{Confidence Interval}\label{header-n135}
+\paragraph{Confidence Interval}\label{header-n181}
 
 For Z test that the variance is known:
 \([\bar{x} - z_{\alpha/2}\sqrt{\cfrac{\sigma^2_x}{n}} , \bar{x} + z_{\alpha/2}\sqrt{\cfrac{\sigma^2_x}{n}}]\)
@@ -420,17 +420,17 @@ For Z test that the variance is unknown:
 For t test:
 \([\bar{x} - t_{\alpha/2,n-1}\sqrt{\cfrac{\hat{\sigma}^2_x}{n}},\bar{x} + t_{\alpha/2,n-1}\sqrt{\cfrac{\hat{\sigma}^2_x}{n}}]\)
 
-\subsubsection{Two sample test}\label{header-n139}
+\subsubsection{Two sample test}\label{header-n185}
 
-\paragraph{Define the variable{[}if needed{]}}\label{header-n140}
+\paragraph{Define the variable{[}if needed{]}}\label{header-n186}
 
-\paragraph{Hypothesis}\label{header-n141}
+\paragraph{Hypothesis}\label{header-n187}
 
 \(H_0\): \(\mu_x - \mu_y = a\)
 
 \(H_1\): \(\mu_x - \mu_y \ne a /\mu_x - \mu_y> a /\mu_x - \mu_y < a\)
 
-\paragraph{Test Statistics}\label{header-n144}
+\paragraph{Test Statistics}\label{header-n190}
 
 pooled estimate is required if \(n_1\), \(n_2\) \textless{} 30, but it
 is always recommended unless question specified not to use
@@ -455,13 +455,13 @@ if it is a two tailed test, then obtain \(z_{\alpha/2}\) or
 if \(|Z| < z\) or \(|T| < t\), \(H_0\) accepted, otherwise \(H_0\)
 rejected
 
-\paragraph{Conclusion}\label{header-n152}
+\paragraph{Conclusion}\label{header-n198}
 
 Given the current data, there \{is/is not\} evidence to say that at
 \(\alpha\)\% significant level, \{description of \(\mu_x,\,u_y\)
 hypothesis\}
 
-\paragraph{Confidence Interval}\label{header-n154}
+\paragraph{Confidence Interval}\label{header-n200}
 
 For Z test with known variance:
 \([(\bar{x} - \bar{y}) - z_{\alpha/2}\sqrt{\cfrac{{\sigma}^2_x}{n_x} + \cfrac{{\sigma}^2_y}{n_y}},(\bar{x} - \bar{y}) + z_{\alpha/2}\sqrt{\cfrac{{\sigma}^2_x}{n_x} + \cfrac{{\sigma}^2_y}{n_y}}]\)
@@ -472,7 +472,7 @@ For Z test with pooled variance:
 For t test:
 \([(\bar{x} - \bar{y}) - t_{\alpha/2,n-2}\sqrt{\cfrac{\hat{\sigma}^2}{n_x} + \cfrac{\hat{\sigma}^2}{n_y}},(\bar{x} - \bar{y}) + t_{\alpha/2,n-2}\sqrt{\cfrac{\hat{\sigma}^2}{n_x} + \cfrac{\hat{\sigma}^2}{n_y}}]\)
 
-\subsubsection{Paired Test}\label{header-n158}
+\subsubsection{Paired Test}\label{header-n204}
 
 for a paired data \(X\) and \(Y\), you may conduct a test for the
 difference \(D\) between \(X\) and \(Y\):
@@ -488,15 +488,15 @@ difference \(D\) between \(X\) and \(Y\):
 \bottomrule
 \end{longtable}
 
-\paragraph{Define the variable{[}if needed{]}}\label{header-n179}
+\paragraph{Define the variable{[}if needed{]}}\label{header-n225}
 
-\paragraph{Hypothesis}\label{header-n180}
+\paragraph{Hypothesis}\label{header-n226}
 
 \(H_0\): \(\mu_D= \)a
 
 \(H_1\): \(\mu_D \ne a, \mu_D > a, \mu_D < a\)
 
-\paragraph{Test Statistics}\label{header-n183}
+\paragraph{Test Statistics}\label{header-n229}
 
 \(Z = \cfrac{\bar{D} - \mu_D}{\sqrt{\cfrac{\hat{\sigma}^2_D}{n_D}}}\) or
 \(T = \cfrac{\bar{D} - \mu_D}{\sqrt{\cfrac{\hat{\sigma}^2_D}{n_D}}}\)
@@ -508,12 +508,12 @@ if it is a two tailed test, then obtain \(z_{\alpha/2}\) or
 if \(|Z| < z\) or \(|T| < t\), \(H_0\) accepted, otherwise \(H_0\)
 rejected
 
-\paragraph{Conclusion}\label{header-n187}
+\paragraph{Conclusion}\label{header-n233}
 
 Given the current data, there \{is/is not\} evidence to say that at
 \(\alpha\)\% significant level, \{description of \(\mu_D\) hypothesis\}
 
-\paragraph{Confidence Interval}\label{header-n189}
+\paragraph{Confidence Interval}\label{header-n235}
 
 For Z test:
 \([\bar{D} - z_{\alpha/2}\sqrt{\cfrac{\hat{\sigma}^2_D}{n}},\bar{D} + z_{\alpha/2}\sqrt{\cfrac{\hat{\sigma}^2_D}{n}}]\)
@@ -521,17 +521,17 @@ For Z test:
 For t test:
 \([\bar{D} - t_{\alpha/2,n-1}\sqrt{\cfrac{\hat{\sigma}^2_D}{n}},\bar{D} + t_{\alpha/2,n-1}\sqrt{\cfrac{\hat{\sigma}^2_D}{n}}]\)
 
-\subsection{Chi Square Test}\label{header-n192}
+\subsection{Chi Square Test}\label{header-n238}
 
-\subsubsection{Goodness of fit test}\label{header-n193}
+\subsubsection{Goodness of fit test}\label{header-n239}
 
-\paragraph{Hypothesis}\label{header-n194}
+\paragraph{Hypothesis}\label{header-n240}
 
 \(H_0\): \{distribution\} is a good model to fit the data
 
 \(H_1\): \{distribution\} is not a good model to fit the data
 
-\paragraph{Frequency Table}\label{header-n197}
+\paragraph{Frequency Table}\label{header-n243}
 
 \begin{longtable}[]{@{}ll@{}}
 \toprule
@@ -544,7 +544,7 @@ Expected & ...\tabularnewline
 \bottomrule
 \end{longtable}
 
-\paragraph{Calculating Expected Value}\label{header-n211}
+\paragraph{Calculating Expected Value}\label{header-n257}
 
 Expected Value can be calculated given the following situation:
 
@@ -566,7 +566,7 @@ Note that before calculating the \(\chi\) score the expected value
 should be combined to the interval next to it so that each interval for
 expected value \textgreater{}5
 
-\paragraph{Calculating the Test Statistics}\label{header-n223}
+\paragraph{Calculating the Test Statistics}\label{header-n269}
 
 \(\chi ^2 = \sum\cfrac{(O-E)^2}{E}\)
 
@@ -590,21 +590,21 @@ Obtain the \(\Chi^2_{DOF,\alpha }\) value from the MF10 booklet, if
 \(\chi^2 > \Chi^2_{DOF,\alpha }\), then \(H_0\) rejected. Otherwise
 \(H_0\) accepted
 
-\paragraph{Conclusion}\label{header-n234}
+\paragraph{Conclusion}\label{header-n280}
 
 Given the current evidence, there is \{enough/not enough\} evidence to
 say that at \(\alpha %\) significant level the model\{distribution\} is
 a good model for the data
 
-\subsubsection{Test for Independent}\label{header-n236}
+\subsubsection{Test for Independent}\label{header-n282}
 
-\paragraph{Hypothesis}\label{header-n237}
+\paragraph{Hypothesis}\label{header-n283}
 
 \(H_0\): \{variable I\} is independent of \{Variable II\}
 
 \(H_1\): \{variable I\} is not independent of \{Variable II\}
 
-\paragraph{Contingency Table}\label{header-n240}
+\paragraph{Contingency Table}\label{header-n286}
 
 For observed frequency, we would have the table here which the sum of
 frequency we could obtained from the observed value:
@@ -658,7 +658,7 @@ Total & \(\sum f_{1,j}\) & \(\sum f_{2,j}\) & \(\dots\) &
 \bottomrule
 \end{longtable}
 
-\paragraph{Test Statistics}\label{header-n329}
+\paragraph{Test Statistics}\label{header-n375}
 
 \(\chi ^2 = \sum\cfrac{(f_o-f_e)^2}{f_e}\)
 
@@ -668,16 +668,16 @@ Obtain the \(\Chi^2_{DOF,\alpha }\) value from the MF10 booklet, if
 \(\chi^2 > \Chi^2_{DGF,\alpha }\), then \(H_0\) rejected. Otherwise
 \(H_0\) accepted
 
-\paragraph{Conclusion}\label{header-n333}
+\paragraph{Conclusion}\label{header-n379}
 
 Given the current evidence, there is \{enough/not enough\} evidence to
 say that at \(\alpha %\) significant level the two variables are
 independent
 
 Note that if \(H_0\) rejected, we could only say that the two variable
-is \textbf{associated} but we cannot say they are correlated
+is \textbf{associated} but we cannot say they are causation
 
-\subsection{Bivariate Data}\label{header-n336}
+\subsection{Bivariate Data}\label{header-n382}
 
 Given two variable y and x, if we attempt to find a correlation between
 them, it is called regression. In FMA we are attempting to find the best
@@ -689,7 +689,7 @@ known as OLS(ordinary least square).
 \href{}{Side note}: The reason we prefer OLS is that it is the best
 unbiased estimator with least variance for the linear model
 
-\subsubsection{Obtaining the regression line}\label{header-n339}
+\subsubsection{Obtaining the regression line}\label{header-n385}
 
 Given \(\hat{y} = a +bx\) as the regression line, we attempt to find
 \((a,b)\) such that \(argmin_{(a,b)} \sum{[(b x_i + a)-y_i}]^2\) This
@@ -699,7 +699,7 @@ could be done by letting \(\cfrac{\partial E}{\partial a} = 0\) and
 Hence we obtained the expression for the coefficient for the regression
 line:
 
-\(b = \cfrac{S_xy}{S_xx} = \cfrac{\cfrac{\sum xy}{n} - \bar{x}\bar{y}}{\cfrac{\sum x^2}{n}-\bar{x}^2}\)
+\(b = \cfrac{S_{xy}}{S_{xx}} = \cfrac{\cfrac{\sum xy}{n} - \bar{x}\bar{y}}{\cfrac{\sum x^2}{n}-\bar{x}^2}\)
 and \(a = \bar{y} - b\bar{x}\)
 
 Notice that the regression line always past \(\bar{x}\) and \(\bar{y}\)
@@ -714,11 +714,11 @@ independent and x as dependent), which is \(\hat{x} = c + dy\)
 
 the coefficient could be obtained similarly by using OLS:
 
-\(d = \cfrac{S_xy}{S_xx} = \cfrac{\cfrac{\sum xy}{n} - \bar{x}\bar{y}}{\cfrac{\sum x^2}{n}-\bar{x}^2}\)
+\(d = \cfrac{S_{xy}}{S_{yy}} = \cfrac{\cfrac{\sum xy}{n} - \bar{x}\bar{y}}{\cfrac{\sum x^2}{n}-\bar{x}^2}\)
 and \(c = \bar{x} - d\bar{y}\)
 
 \subsubsection{Product moment correlation
-coefficient}\label{header-n348}
+coefficient}\label{header-n394}
 
 The line of best fit can always be calculated, however the regression
 line may or may not reflect the real linear relationship within the
@@ -737,7 +737,7 @@ regression lines for y on x and for x on y
   b\textless{}0, \(r = -\sqrt{bd}\), the correlation is negative
 \end{itemize}
 
-\subsubsection{Comment on PMCC}\label{header-n357}
+\subsubsection{Comment on PMCC}\label{header-n403}
 
 \(r \in [-1,1]\) and that:
 
@@ -754,9 +754,9 @@ if \(r > \rho_{\alpha\%, n}\) it is reliable
 if \(r > \rho_{\alpha\%, n}\), it is not reliable
 
 \subsubsection{Conducting Hypothesis Test on the
-PMCC}\label{header-n365}
+PMCC}\label{header-n411}
 
-\paragraph{Hypothesis}\label{header-n366}
+\paragraph{Hypothesis}\label{header-n412}
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule
@@ -773,14 +773,14 @@ correlation\tabularnewline
 The test for non-zero correlation is two tailed test, and the test for
 positive and negative correlation is one-tailed test.
 
-\paragraph{Test statistics}\label{header-n377}
+\paragraph{Test statistics}\label{header-n423}
 
 The critical value for \(\rho_{n, sig \space level}\) can be obtained
 from MF10, (notice the difference between two tailed and one tailed
 significant level). If \(\rho < |r|\)1 reject \(H_0\), otherwise accept
 \(H_0\),
 
-\paragraph{Conclusion}\label{header-n379}
+\paragraph{Conclusion}\label{header-n425}
 
 Given the current evidence, there is \{enough/not enough\} evidence to
 say that at \(\alpha %\) significant level there is a
