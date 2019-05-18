@@ -16,5 +16,9 @@ Topics TODO:
 
 * FMA Mechanics notes
 
+## Revision
+
+* add the points to note for selected questions among the past papers
+
 ## Copyright Disclaimer
 Every Reasonable Effort had been made to trace the reference material owner, but in any concern the repo hold no responsibility for it and wish the copyright holder to directly contact the repo for those materials
