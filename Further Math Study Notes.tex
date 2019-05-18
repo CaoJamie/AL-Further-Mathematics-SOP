@@ -1,0 +1,232 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\section{Further Math Notes}\label{header-n106}
+
+\subsection{Further Pure}\label{header-n108}
+
+\subsubsection{Implicit Differentiation}\label{header-n109}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Note, for some implicit differentiation such as \texttt{s03\_01\_07},
+  all of the condition in the equation must be consider, such as
+  \(x^4 + y^4 = 1\), which is useful to obtain the correct result. Be
+  aware of those question
+\end{enumerate}
+
+\subsubsection{Series}\label{header-n113}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  CIE convergence usually related with the general term's convergence:
+\end{enumerate}
+
+For a series \(u_1 + u_2 + \dots u_n\), if the general term for
+\(\sum_{n=1}^{\infty}{u_n}\) converge then the single term \(u_n\)
+converge on a specific limit.
+
+\textbf{Note}, this is not true vice versa, e.g. \(u_n = \frac{1}{n}\)
+converge but \(\sum^\infty_{n=1}{u_n}\) doesn't converge
+
+So for question such as \texttt{s03\_01\_3} we can directly obtain the
+general term for \(\sum^\infty_{n=1}{u_n}\) and deduce whether the
+series converge from it directly
+
+\subsubsection{Differentiation Equation}\label{header-n120}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  For the complementary function for characteristics having imaginary
+  root, \(y_{c.f.} = e^{-\alpha x} (A\cos\beta x + B\sin \beta x)\),
+  this formula should be remembered precisely
+\end{enumerate}
+
+\subsubsection{Roots of Polynomial}\label{header-n124}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  For questions such as \texttt{w08\_01\_12} , the last bit usually
+  involve some manipulation of the series, which could be done by doing
+  algebraic manipulation and note the symmetry property of the
+  summation. Usually the objective is to approach some existing
+  conclusion for example \(\sum \alpha\) or \(S_n\), therefore we can
+  conduct observation on this one:
+
+  \( \alpha^2 (\beta^4 + \gamma^4 + \delta^4) + \beta^2 (\alpha^4 + \gamma^4 + \delta^4) + \gamma^2 (\alpha^4 + \beta^4 +  \delta^4) + \delta^2(\alpha^4 + \beta^4 + \gamma^4)\)
+  , it is easy to realize that it is basically similar to \(S_2 S_4\),
+  but each \(S_4\) have one term \(\alpha^4\) lost, so to bring it back
+  to the polynomial, combinedly it is to obtain that the polynomial
+  equals to \(S_2S_4 - S_6\)
+\end{enumerate}
+
+\subsubsection{Integration}\label{header-n157}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Note that for CIE both 2D and 3D centroid still exists on syllabus so
+  it is better to remember both equation, to deal with problem such as
+  \texttt{s08\_01\_1}
+\end{enumerate}
+
+For 2D centroid:
+
+\[\bar{x} = \cfrac{\int{xy}dx}{\int y dx}, \bar{y} = \cfrac{\frac{1}{2}\int y^2 dx}{\int y dx}\]
+
+For 3D centroid:
+
+\[\bar{x} = \cfrac{\int xy^2 dx}{\int y^2 dx}, \bar{y} = 0\]
+
+the derivation can be dealt with by using the \textbf{finite element
+method}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  when the question ask to obtain a recurrence formula by considering
+  some expression such as \(\frac{d}{dx} Q(x)\) the algebraic result
+  usually contains two part due to chain rule for differentiation. The
+  recurrence formula usually comes from reintegrate the expression
+  obtained, but sometimes like \texttt{w08\_01\_07} the answer is not
+  immediately obvious. 
+\end{enumerate}
+
+\(I_n = \int^1_0 \cfrac{1}{(1+x^4)^n} dx\) , obtain
+\(4nI_{n+1} = \frac{1}{2^n} +(4n-1)I_n\) by considering
+\(\frac{d}{dx} (\cfrac{x}{(1+x^4)^n})\)
+
+Firstly taking the differentiation gives
+\(\cfrac{1}{(1+x^4)^n} - \cfrac{4nx^4}{(1+x^4)^{n+1}}\), but the
+expression only match for one term. However, since the denominator is
+\((1+x^4)\), we can add and substract 1 from the right hand side part,
+therefore resulting
+\(\cfrac{1}{(1+x^4)^n} - \cfrac{4n(1+x^4-1)}{(1+x^4)^{n+1}}\) and hence
+obtain \(4nI_{n+1} = \frac{1}{2^n} +(4n-1)I_n\)
+
+\subsubsection{Complex Number}\label{header-n133}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  For questions like \texttt{s03\_01\_06} asking to deduce the roots of
+  a given polynomial from the trigonometry expression:
+\end{enumerate}
+
+\(\cos(6\theta) = 32\cos^6\theta -48\cos^4\theta + 18\cos^2\theta-1 \Rightarrow 64x^6 - 96x^4 + 36x^2 -1 = 0\)
+
+By F.T.A. we now that the polynomial will have 6 solution, but this is
+not the case for the trigonometry identity which works for any
+\(\theta\), hence we need to limit some of the expression, by going back
+from polynomial we would have:
+
+\(-\frac{1}{2} = 32x^6 - 48x^4 + 18x^2 -1\), if \(x  = \cos\theta\) we
+would have \(-\frac{1}{2} = \cos 6\theta = \cos\frac{2}{3}\pi\)
+
+we would easily obtain that
+
+\(6\theta = \pm \frac{2}{3} \pi + 2\pi k, k = 0, \pm1, \pm 2,\dots\)
+
+\(\theta = \pm \cfrac{\pi}{9} + \cfrac{\pi}{3}k\)
+
+\(\theta = \frac{\pi}{9},\frac{2\pi}{9},\frac{4\pi}{9},\frac{5\pi}{9},\frac{7\pi}{9},\frac{8\pi}{9}\)
+
+\textbf{Note} we would want all the roots having different result so be
+sure to eliminate the equivalent solution
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+\end{enumerate}
+
+\subsubsection{Vector Space}\label{header-n145}
+
+\subsubsection{Vector Geometry}\label{header-n186}
+
+\subsection{Further Mechanics}\label{header-n147}
+
+\subsection{Further Statistics}\label{header-n149}
+
+\subsubsection{P.D.F. and C.D.F.}\label{header-n150}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  For the substitution of a different variable such as
+  \texttt{w02\_02\_10} , i.e. \(Y = X^2\) and obtain the p.d.f. the
+  verification for the correctness of the process could be done via
+  directly substituting
+\end{enumerate}
+
+Given that \(f(x) = \int^\infty_0 p(x) dx\), we would be able to obtain
+the p.d.f. for
+\(g(y) = \int_0^\infty p(\sqrt(y)) \cfrac{1}{2\sqrt{y}} dy\) by the
+means of substitution \(y  = \sqrt{x}\) (Note that the upper limit and
+lower limit should also been substituted) so that the result could be
+compared with the result from going through the definition of \(G(y)\) ,
+but this is only a method for verification
+
+Also, when asking for definition of \(E(x)\) and \(Var(x)\), it is
+probably the best by writing the original formula out and then
+
+\end{document}
